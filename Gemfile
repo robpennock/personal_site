@@ -46,7 +46,5 @@ group :development, :test do
   gem 'capybara'  
   gem 'launchy'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-
 end
 
