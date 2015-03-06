@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'unicorn'
+
+gem 'pg'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -46,6 +48,7 @@ group :development, :test do
   gem 'rspec-rails'  
   gem 'capybara'  
   gem 'launchy'
+  gem 'sqlite3'
   # Use sqlite3 as the database for Active Record
 end
 
