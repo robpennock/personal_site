@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html{
+	height: 100%;
+}
+
+body{
+	background: -webkit-linear-gradient(155deg, white, gray); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(155deg, white, gray); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(155deg, white, gray); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(155deg, #695963, #DBDBDB, #85001D); /* Standard */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+	padding-bottom: 20px;
+	font-family: 'Special Elite', cursive;
+}
+h1, h2, h3{
+	font-family: 'Josefin Slab', serif;
+}
+
+#picStyle{
+ 	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: black;	
+}
+
+.table-like{
+	display: table;
+	height: 200px;
+	border: 2px solid black;
+	text-align: center;
+	vertical-align: middle;
+	display: inline;
+	/*position:relative; need parent container with relative position*/
+	
+}
+
+.table-row-like{
+	display: table-row;
+	height: 90%;
+}
+
+.table-cell-like{
+	display: table-cell;
+
+}
+
+.left-block-black{
+}
+
+#down-button{
+	padding-top: 8px;
+	padding-bottom: 12px;
+}
+
+#white-image{
+	padding-top: 12px;
+	padding-bottom: 6px;
+	border: 2px solid white;
+	border-radius: 8px;
+	background-color: white;
+}
+h1{
+	font-family: 'Josefin Slab', serif;
+}
