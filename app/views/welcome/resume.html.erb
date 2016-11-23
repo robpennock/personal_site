@@ -1,12 +1,18 @@
 <% provide(:title, "Resume") %>
-<div class="row">
-	<div class="col-md-10 col-md-offset-1">
-		<h2>My Resume</h2>
-		<div id = "down-button">		
-			<%= link_to "Download Resume PDF", download_resume_path, :class => 'btn btn-primary' %>
-		</div>	
-		<div id = "white-image">	
-			<%= image_tag "resumeRobinPennock.jpg", :size => "900x1165" %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-1 hidden-sm hidden-xs"></div>
+		<div class="col-md-10 col-sm-12 col-xs">
+			<div style="margin-left: auto; margin-right: auto; align: center;">
+				<h2>My Resume</h2>
+				<div id = "down-button">		
+					<%= link_to "Download Resume PDF", download_resume_path, :class => 'btn btn-primary' %>
+				</div>	
+				<div id = "white-image" align="center">	
+					<%= image_tag "resumeRobinPennock.jpg", :class => 'img-responsive' %>
+				</div>
+			</div>
 		</div>
+		<div class="col-md-1 hidden-sm hidden-xs"></div>
 	</div>
 </div>

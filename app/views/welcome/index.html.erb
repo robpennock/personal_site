@@ -1,7 +1,7 @@
 <% provide(:title, "Home") %>
 <div class="container">
 <div class="row" id="equalRow">
-	<div class="col-md-4 jumbotron"> <!--left column-->
+	<div class="col-md-4 col-sm-12 col-xs-12 jumbotron"> <!--left column-->
 		<h1>Welcome</h1>
 		</br>
 		<p>This is the homepage of <i>Rob Pennock</i>, Software Developer.</p>
@@ -10,36 +10,37 @@
 		</br>
 		<p>Rob is also a Studio Musician and Engineer</p>
 	</div>
-	<div class="col-md-1"></div>
-	<div class="col-md-7" align = "center" id="picStyle"><!--right column-->
-		
-	<div id="welCarousel" class="carousel slide" data-ride="carousel">
-	  <!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#welCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#welCarousel" data-slide-to="1"></li>
-		</ol>
+	<div class="col-md-1 hidden-sm hidden-xs"></div>
+	<div class="col-md-7 col-sm-12 col-xs-12" align = "center" id="picStyle"><!--right column-->
+	<div>
+		<div id="welCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#welCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#welCarousel" data-slide-to="1"></li>
+			</ol>
 
-	  <!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<%= image_tag "suit.jpg", :size=>"640x940" %>
-			</div>
+		  <!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<%= image_tag "suit.jpg", :class => 'img-responsive' %>
+				</div>
 
-		    <div class="item">
-				<%= image_tag "suit2.jpg", :size=>"640x940" %>
-		    </div>
-	  </div>
+			    <div class="item">
+					<%= image_tag "suit2.jpg", :class => 'img-responsive' %>
+			    </div>
+		  </div>
 
-	  <!-- Left and right controls -->
-	  <a class="left carousel-control" href="#welCarousel" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#welCarousel" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#welCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#welCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 	</div>
 </div>
 </div>
